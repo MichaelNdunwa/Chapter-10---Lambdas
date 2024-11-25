@@ -43,7 +43,7 @@ fun main() {
         a: Int,
         b: Int,
         operation: (Int, Int) -> Int
-    ): Int   {
+    ): Int {
         val result = operation(a, b)
         println(result)
         return result
@@ -67,11 +67,11 @@ fun main() {
         a + b
     })
 
-    operateOnNumbers(4, 2, operation = fun (a: Int, b: Int) = a - b)
+    operateOnNumbers(4, 2, operation = fun(a: Int, b: Int) = a - b)
     // Did you see what I did above, this is the actual function with no names lol 😁
 
     // You can reduce the above like
-    operateOnNumbers(4, 2, operation = fun (a, b) = a - b)
+    operateOnNumbers(4, 2, operation = fun(a, b) = a - b)
 
     operateOnNumbers(4, 2, { a, b ->
         a + b
@@ -132,7 +132,6 @@ fun main() {
         -it.length
     })
     println(namesByLength)
-
 
 
     /*** Iterating over collections with lambdas ***/
